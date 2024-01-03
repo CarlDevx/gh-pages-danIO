@@ -12,8 +12,7 @@
         const req = await fetch("https://danio.pythonanywhere.com/");
         const response = await req.json()
         console.log(response)
-        console.log(response.ip)
-        window.alert(response)
+        window.alert(response.ip)
         resp = response;
       }
       getAPI();
