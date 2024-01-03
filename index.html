@@ -1,14 +1,14 @@
 !DOCTYPE <html>
 <html>
   <head>
-    <tile>API</tilte>
+    <title>API</title>
   </head>
   <body>
     <p id="p">api Response Here</p>
     <script>
       let pf = document.getElementById("p");
       async function getAPI(){
-        const requ = await fetch("danio.pythonanywhere.com/");
+        const req = await fetch("danio.pythonanywhere.com/");
         const response = await req.json()
         console.log(response)
         window.alert(response)
