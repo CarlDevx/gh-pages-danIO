@@ -6,12 +6,15 @@
   <body>
     <p id="p">api Response Here</p>
     <script>
+      let resp = null;
       let pf = document.getElementById("p");
       async function getAPI(){
         const req = await fetch("https://danio.pythonanywhere.com/");
         const response = await req.json()
         console.log(response)
+        console.log(response.ip)
         window.alert(response)
+        resp = response;
       }
       getAPI();
     </script>
