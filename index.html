@@ -1,4 +1,4 @@
-!DOCTYPE <html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>API</title>
@@ -8,7 +8,7 @@
     <script>
       let pf = document.getElementById("p");
       async function getAPI(){
-        const req = await fetch("danio.pythonanywhere.com/");
+        const req = await fetch("https://danio.pythonanywhere.com/");
         const response = await req.json()
         console.log(response)
         window.alert(response)
